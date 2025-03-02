@@ -2,10 +2,10 @@ let toan = +prompt("Nhập điểm Toán:");
 let van = +prompt("Nhập điểm Văn:");
 let anh = +prompt("Nhập điểm Anh:");
 
-if (isNaN(toan) || isNaN(van) || isNaN(anh) || toan < 0 || van < 0 || anh < 0 || toan > 10 || van > 10 || anh > 10) {
+if (isNaN(math) || isNaN(literature) || isNaN(english) || math < 0 || literature < 0 || english < 0 || math > 10 || literature > 10 || english > 10) {
     alert("Vui lòng nhập điểm hợp lệ từ 0 đến 10!");
 } else {
-    let score = (toan + van + anh) / 3;
+    let score = (math + literature + english) / 3;
     let category;
     if (score >= 8.0) {
         category = "Giỏi";
